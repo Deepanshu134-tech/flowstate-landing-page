@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowState — Project Management for Freelance Developers</title>
+    <meta name="description" content="Project management that doesn't get in your way. Built for freelance developers who want to ship code, not update Jira." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- Easter egg toast notification -->
+    <div id="easter-egg-toast" role="alert" aria-live="polite">
+        <span>🎉</span>
+        <span>Konami code activated! You found the secret!</span>
+    </div>
+
+    <!-- Confetti container for easter egg effect -->
+    <div id="confetti-container"></div>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <nav class="nav container" aria-label="Main navigation">
+            <div class="nav-brand">
+                <span class="nav-logo" aria-hidden="true">◆</span>
+                <span class="nav-title">FlowState</span>
+                <span class="nav-badge">Beta</span>
+            </div>
+
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#" role="menuitem">Features</a></li>
+                <li role="none"><a href="#" role="menuitem">Pricing</a></li>
+                <li role="none"><a href="#" role="menuitem">Docs</a></li>
+                <li role="none"><a href="#" role="menuitem">Community</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span id="theme-icon" aria-hidden="true">🌙</span>
+                    <span id="theme-label">Dark</span>
+                </button>
+                <a href="#" class="btn btn-primary btn-sm">Get started</a>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span>🚀</span>
+                <span>Now in public beta</span>
+                <span class="hero-badge-dot"></span>
+                <span>Join 3,400+ freelancers</span>
+            </div>
+
+            <h1 id="hero-title" class="hero-title">
+                Project management that
+                <span class="hero-highlight">doesn't get in your way</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Built for freelance developers who want to ship code, not update Jira.
+                No learning curve. No ceremony. Just flow.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary btn-lg btn-glow">
+                    Start free trial
+                    <span aria-hidden="true">→</span>
+                </a>
+                <a href="#" class="btn btn-outline btn-lg">
+                    <span aria-hidden="true">▶</span>
+                    Watch demo
+                </a>
+            </div>
+
+            <div class="hero-trust">
+                <div class="hero-trust-avatars">
+                    <span class="avatar">JD</span>
+                    <span class="avatar">SK</span>
+                    <span class="avatar">ML</span>
+                    <span class="avatar">+</span>
+                </div>
+                <p class="hero-trust-text">
+                    <strong>3,400+</strong> freelancers already using FlowState
+                </p>
+            </div>
+
+            <p class="hero-footnote">✨ 14-day free trial · No credit card required</p>
+        </div>
+
+        <!-- Decorative background elements -->
+        <div class="hero-decoration hero-decoration-1" aria-hidden="true"></div>
+        <div class="hero-decoration hero-decoration-2" aria-hidden="true"></div>
+        <div class="hero-decoration hero-decoration-3" aria-hidden="true"></div>
+        <div class="hero-decoration hero-decoration-4" aria-hidden="true"></div>
+    </section>
+
+    <!-- Stats section with animated counters -->
+    <section class="stats" aria-labelledby="stats-title">
+        <div class="container">
+            <h2 id="stats-title" class="visually-hidden">FlowState by the numbers</h2>
+
+            <dl class="stats-grid">
+                <div class="stat-item">
+                    <dt class="stat-number" data-target="12000">0</dt>
+                    <dd class="stat-label">Tasks completed</dd>
+                    <span class="stat-trend">↑ 23% this month</span>
+                </div>
+
+                <div class="stat-item">
+                    <dt class="stat-number" data-target="3400">0</dt>
+                    <dd class="stat-label">Happy freelancers</dd>
+                    <span class="stat-trend">↑ 12% this month</span>
+                </div>
+
+                <div class="stat-item">
+                    <dt class="stat-number" data-target="99.9">0</dt>
+                    <dd class="stat-label">% uptime</dd>
+                    <span class="stat-trend">↓ 0.1% this month</span>
+                </div>
+
+                <div class="stat-item">
+                    <dt class="stat-number" data-target="4">0</dt>
+                    <dd class="stat-label">Minutes to onboard</dd>
+                    <span class="stat-trend">⏱️ Fastest in class</span>
+                </div>
+            </dl>
+
+            <p class="stats-footnote">* Real data from our internal beta. No made-up numbers.</p>
+        </div>
+    </section>
+
+    <!-- Features section with interactive dashboard -->
+    <section class="features" aria-labelledby="features-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Dashboard</span>
+
+                <h2 id="features-title" class="section-title">
+                    Your workflow, <span class="section-highlight">visualised</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Not a screenshot — this is the actual dashboard you'll use every day.
+                </p>
+            </div>
+
+            <!-- Interactive dashboard mock -->
+            <div class="dashboard-mock" id="dashboard-mock">
+                <div class="dashboard-header">
+                    <div>
+                        <h3 class="dashboard-title">Active sprint</h3>
+                        <p class="dashboard-subtitle">
+                            <span id="tasks-remaining">3</span> tasks remaining
+                        </p>
+                    </div>
+                    <span class="dashboard-badge">Due Fri</span>
+                </div>
+
+                <div class="dashboard-tasks" id="dashboard-tasks">
+                    <div class="task-item" data-task="0">
+                        <div class="task-row">
+                            <span class="task-name">API rate limiting</span>
+                            <span class="task-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="task-item" data-task="1">
+                        <div class="task-row">
+                            <span class="task-name">Payment webhook</span>
+                            <span class="task-percentage">45%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%;" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="task-item" data-task="2">
+                        <div class="task-row">
+                            <span class="task-name">User auth screens</span>
+                            <span class="task-percentage">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-footer">
+                    <span class="dashboard-meta">⏱️ 4h 20m estimated</span>
+                    <span class="dashboard-meta">👤 Assigned to you</span>
+                    <span class="dashboard-meta dashboard-interact">💡 Click a task to toggle status</span>
+                </div>
+            </div>
+
+            <!-- Feature cards -->
+            <ul class="feature-grid" role="list">
+                <li class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">⚡</div>
+                    <h3 class="feature-title">Blazing fast</h3>
+                    <p class="feature-description">No page reloads. No spinning spinners. Every action is instant.</p>
+                    <span class="feature-tag">New</span>
+                </li>
+
+                <li class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🧩</div>
+                    <h3 class="feature-title">Integrates with your stack</h3>
+                    <p class="feature-description">GitHub, Slack, Vercel — plug in what you already use.</p>
+                    <span class="feature-tag">Popular</span>
+                </li>
+
+                <li class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">📦</div>
+                    <h3 class="feature-title">One tool, not ten</h3>
+                    <p class="feature-description">Replace Trello, Notion, and your sticky notes with one clean view.</p>
+                    <span class="feature-tag">Coming soon</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Call to action section -->
+    <section class="cta" aria-labelledby="cta-title">
+        <div class="container cta-content">
+            <div class="cta-badge">🌟 Limited beta</div>
+            <h2 id="cta-title" class="cta-title">Ready to get into flow?</h2>
+            <p class="cta-subtitle">
+                Join 3,400+ freelancers who stopped wrestling with project management.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg cta-button btn-glow">
+                Start your free trial
+                <span aria-hidden="true">→</span>
+            </a>
+            <p class="cta-footnote">No commitment. Cancel anytime.</p>
+        </div>
+
+        <!-- Decorative background elements -->
+        <div class="cta-decoration cta-decoration-1" aria-hidden="true"></div>
+        <div class="cta-decoration cta-decoration-2" aria-hidden="true"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo" aria-hidden="true">◆</span>
+                <span class="footer-title">FlowState</span>
+                <span class="footer-copyright">© 2026</span>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Support</a>
+                <a href="#">Status</a>
+                <a href="#">Blog</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
