@@ -32,17 +32,8 @@ Inter font from Google Fonts
 I kept it simple because I wanted the page to load fast and be easy to maintain. No build step, no dependencies, no headache.
 
 Live Demo
-View the live page here
+https://flowstate-projectmanagement.netlify.app/
 
-Project Structure
-text
-flowstate/
-├── index.html          # Main page
-├── DECISIONS.md        # My design decisions & trade-offs
-├── css/
-│   └── style.css       # All styles (including dark mode)
-└── js/
-    └── main.js         # All interactions
 Why I Built This
 This was part of an assessment where I had to choose between building a scraper or a landing page. I went with the landing page because I wanted to show that I can think about the user experience — not just write code that works.
 
